@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    # third party apps
+    'storages',
     # this our apps
     #my apps
     "accounts",
@@ -158,3 +160,8 @@ CSRF_COOKIE_SECURE              = False
 SECURE_HSTS_SECONDS             = None
 SECURE_HSTS_INCLUDE_SUBDOMAINS  = False
 SECURE_FRAME_DENY               = False
+
+AWS_GROUP_NAME="shop_beyond_Group"
+AWS_USERNAME="shopping-beyond"
+AWS_ACCESS_KEY_ID = "AKIAYRCZALCX4BDH74VZ"
+AWS_SECRET_ACCESS_KEY="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"

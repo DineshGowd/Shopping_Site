@@ -39,7 +39,7 @@ from .views import home_page_old,home_page_new,home_page,contact_page,about_page
 #                             )
 
 urlpatterns = [
-	path(r'',home_page),
+	path(r'',home_page_new),
     path(r'old/', home_page_old),
     path(r'home/', home_page_new,name="home"),
     path(r'contact/', contact_page,name="contact"),

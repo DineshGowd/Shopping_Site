@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    # third party apps
+    'storages',
     # this our apps
     #my apps
     "accounts",
@@ -150,6 +152,8 @@ MEDIA_URL = '/media/'
 
 MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static_cdn","media_root")
 
+from ecommerce.aws.conf import *
+
 # https://kirr.co/vklau5
 
 # lets Encrypt ssl/tls https
@@ -165,3 +169,7 @@ SECURE_HSTS_SECONDS             = 1000000
 SECURE_FRAME_DENY               = True
 
 
+AWS_GROUP_NAME="shop_beyond_Group"
+AWS_USERNAME="shopping-beyond"
+AWS_ACCESS_KEY_ID = "AKIAYRCZALCX4BDH74VZ"
+AWS_SECRET_ACCESS_KEY="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"
